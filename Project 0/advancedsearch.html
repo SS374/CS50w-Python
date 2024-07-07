@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>Advanced Search!</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            #content {
+                text-align: center;
+                width: 30vw;
+                max-width: 400px;
+            }
+
+            .inputbar {
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                border-radius: 15px;
+                border: 2px darkgrey solid;
+                font-size: 1rem;
+            }
+
+            .link {
+                text-decoration: none;
+                font-size: 1rem;
+                color:gray;
+            }
+
+            .link:hover {
+                color: black;
+                text-decoration: underline;
+            }
+
+            #navbar {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+
+            #searchbutton {
+                width: 100%;
+                margin-top: 10px;
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px lightgrey solid;
+                font-size: 1rem;
+            }
+
+            #searchbutton:hover {
+                border-color: gray;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="index.html" class = "link">Normal Search</a>
+        </div>
+
+        <div id = "content">
+            <form action="https://www.google.com/search">
+                <input type="text" name="as_q" class="inputbar" placeholder="Containing all of these words..."> <br>
+                <input type="text" name="as_epq" class="inputbar" placeholder="This exact word/phrase..."><br>
+                <input type="text" name="as_oq" class="inputbar" placeholder="Any of these words..."><br>
+                <input type="text" name="as_eq" class="inputbar" placeholder="None of these words..."><br>
+                <input type="submit" value="Google Search" id="searchbutton">
+            </form>
+        </div>
+    </body>
+
+</html>

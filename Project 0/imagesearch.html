@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>Image Search!</title>
+
+        <style>
+            #navbar {
+                position: absolute;
+                height: 10vh;
+                right: 10px;
+            }
+
+            #content {
+                position: absolute;
+                top: 40vh;
+                right: 35vw;
+                bottom: 40vh;
+                left: 35vw;
+                width: 30vw;
+                height: 100px;
+            }
+
+            #inputbar {
+                border-radius: 15px;
+                border-width: 2px;
+                height: 50%;
+                width: 100%
+            }
+
+            #searchbutton {
+                border-radius: 20px;
+                border-width: 1px;
+                height: 50%;
+                width: 33%;
+                margin: 10px 33% 0px 33%;
+                font-size: 1.2vw;
+            }
+
+            .link {
+                margin: auto 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id = "navbar">
+            <a href="index.html" id = "link">Normal Search</a>
+        </div>
+
+        <form action="https://www.google.com/search" id = "content">
+            <input type="text" name="tbm" value = "isch" hidden>
+            <input type="text" name="q" id = "inputbar"> <br>
+            <input type="submit" value="Google Search" id = "searchbutton">
+        </form>
+
+    </body>
+
+
+</html>

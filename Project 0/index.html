@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #navbar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-align: right;
+        }
+
+        #content {
+            text-align: center;
+            width: 30vw;
+            max-width: 400px; /* Limit maximum width for larger screens */
+        }
+
+        #inputbar {
+            width: 100%;
+            border-radius: 15px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            font-size: 1rem; /* Adjust font size as per your design */
+        }
+
+        #searchbutton {
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            font-size: 1rem; /* Adjust font size as per your design */
+            margin-top: 10px; /* Space between input and button */
+        }
+
+        .link {
+            margin: 5px; /* Adjust spacing between navbar links */
+            text-decoration: none; /* Remove default underline */
+            color: #333; /* Adjust link color */
+        }
+
+        .link:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar">
+    <a href="imagesearch.html" class="link">Image Search</a>
+    <a href="advancedsearch.html" class="link">Advanced Search</a>
+</div>
+
+<div id="content">
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="inputbar" placeholder="Enter your search term"> <br>
+        <input type="submit" value="Google Search" id="searchbutton">
+    </form>
+</div>
+
+</body>
+</html>
